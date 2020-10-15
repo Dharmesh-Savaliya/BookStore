@@ -8,7 +8,7 @@ import { CoreService } from 'src/app/services/core.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  projectTitle = 'Gutenberg Project';
+  projectTitle = 'Book Store';
   public category = [];
 
   constructor(
