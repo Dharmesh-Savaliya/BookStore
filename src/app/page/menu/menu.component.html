@@ -1,0 +1,24 @@
+<div class="container">
+  <div>
+    <div class="row">
+      <div id="prjectName" class="page_content">
+        <h1>{{projectTitle}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let data of category">
+        <a (click)="redirectToCategory(data.name)">
+          <div class="card">
+            <div>
+              <span class="{{data.icon}} icon-class" aria-hidden="true"></span>
+              {{data.name | uppercase}}
+            </div>
+            <div>
+              <span class="fa fa-arrow-right icon-class"></span>
+            </div>
+          </div>
+        </a><br>
+      </div>
+    </div>
+  </div>
+</div>
